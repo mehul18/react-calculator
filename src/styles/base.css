@@ -6,3 +6,13 @@ body {
 .app_wrapper {
     overflow: hidden;
 }
+
+ @media only screen and (min-width: 540px) and (orientation: landscape) {
+     #cars {
+         
+       height: 60px;
+    width: 50%;
+    right: 0;
+        position: absolute;
+     }
+  }
