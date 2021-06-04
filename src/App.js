@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Header from './components/Header';
 import Calculator from './components/Calculator';
 
 
 function App() {
+  
+  useEffect(() => {
+    window.addEventListener("resize", function() {
+      document.querySelector('.brk_room-name').focus();
+    }, false);
+  }, [])
+  
   return (
     <div className="app_wrapper">
         <Header title='Calculator' />
+    <h2 className="brk_room-name"> Test11233 </h2>
         <Calculator />
     
         <select name="cars" id="cars">
