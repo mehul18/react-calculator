@@ -8,7 +8,6 @@ function App() {
   
   useEffect(() => {
     window.addEventListener("resize", function() {
-      alert(document.querySelector('.brk_room-name'));
       document.querySelector('.brk_room-name').blur();
     }, false);
   }, [])
