@@ -8,8 +8,7 @@ function App() {
   
   useEffect(() => {
     window.addEventListener("resize", function() {
-      console.log('changes');
-      document.querySelector('.brk_room-name').blur();
+      document.getElementById('select-box').scrollIntoView();
     }, false);
   }, [])
   
