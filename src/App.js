@@ -8,14 +8,14 @@ function App() {
   
   useEffect(() => {
     window.addEventListener("resize", function() {
-      document.getElementById('select-box').scrollIntoView();
+      document.getElementById('brk_room-name').scrollIntoView();
     }, false);
   }, [])
   
   return (
     <div className="app_wrapper">
         <Header title='Calculator' />
-    <h2 className="brk_room-name"> Test11233 </h2>
+    <h2 id="brk_room-name"> Test11233 </h2>
         <Calculator />
     
         <select name="cars" id="cars">
